@@ -14,6 +14,8 @@ public class Spawner : MonoBehaviour {
     // at the end i will update our timer and add time.deltatime for every frame 
     public GameObject[] cubes;
     public Transform[] points;
+
+
     // i use an external website to measure the BPM which is the beats per minute
     // https://songbpm.com/@mbb/island
     // so to know how many beats or many seconds between two  beat i divided the Bpm to 60 seconds 
