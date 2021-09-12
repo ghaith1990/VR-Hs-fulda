@@ -1,11 +1,14 @@
 using System;
+using System.IO;
+using System.Collections;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 using UnityEngine;
 
 
-// UdpPacket provides packetIO over UDP
-public class UDPPacketIO : MonoBehaviour
+  // UdpPacket provides packetIO over UDP
+  public class UDPPacketIO 
   {
     private UdpClient Sender;
     private UdpClient Receiver;
@@ -17,6 +20,7 @@ public class UDPPacketIO : MonoBehaviour
     void Start()
     {
         //do nothing. init must be called
+        Debug.Log("Hiiiiii");
     }
 
   	public void init(string hostIP, int remotePort, int localPort){

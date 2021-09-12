@@ -9,7 +9,7 @@ using System.Threading;
 
 public class UdpReceive : MonoBehaviour
 {
-    public int port = 2002;
+    public int port = 80;
     private UdpClient client;
     private IPEndPoint RemoteIpEndPoint;
     private Thread t_udp;

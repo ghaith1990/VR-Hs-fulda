@@ -22,9 +22,9 @@ using System;
 
   public delegate void OscMessageHandler( OscMessage oscM );
 
-  public class Osc : MonoBehaviour
+  public class Osc 
   {
-      private Udp OscPacketIO;
+      private UDPPacketIO OscPacketIO;
       Thread ReadThread;
       private bool ReaderRunning;
       private OscMessageHandler AllMessageHandler;
@@ -35,7 +35,7 @@ using System;
 		//do nothing, init must be called
 	}
 
-	public void init(Udp oscPacketIO){
+	public void init(UDPPacketIO oscPacketIO){
 	  OscPacketIO = oscPacketIO;
 
       // Create the hashtable for the address lookup mechanism

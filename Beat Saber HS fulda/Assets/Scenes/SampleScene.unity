@@ -593,6 +593,52 @@ Transform:
   m_Father: {fileID: 102002844}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077577514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077577516}
+  - component: {fileID: 1077577515}
+  m_Layer: 0
+  m_Name: OSCConnection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1077577515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077577514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff95ffb4b6e14102a351648aaed0a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RemoteIP: 127.0.0.1
+  SendToPort: 9000
+  ListenerPort: 8000
+  receiverGameObjects:
+  - {fileID: 1818295773}
+  - {fileID: 1199724180}
+--- !u!4 &1077577516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077577514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107366385
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +923,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1318597863}
   - component: {fileID: 1318597862}
+  - component: {fileID: 1318597864}
+  - component: {fileID: 1318597865}
+  - component: {fileID: 1318597866}
   m_Layer: 0
   m_Name: TheFatRat - Unity
   m_TagString: Untagged
@@ -992,6 +1041,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1318597864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318597861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c5306ea5f255242a5c4f04dc16e961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1318597865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318597861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d33a6587f1fac844938420183a54d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RemoteIP: 127.0.0.1
+  SendToPort: 7470
+  ListenerPort: 80
+  receiverGameObjects: []
+--- !u!114 &1318597866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318597861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff95ffb4b6e14102a351648aaed0a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RemoteIP: 127.0.0.1
+  SendToPort: 9000
+  ListenerPort: 8050
+  receiverGameObjects: []
 --- !u!1 &1362878918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,6 +1192,7 @@ GameObject:
   - component: {fileID: 1818295774}
   - component: {fileID: 1818295776}
   - component: {fileID: 1818295775}
+  - component: {fileID: 1818295777}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1164,6 +1255,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1818295773}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1818295777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818295773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa2bdc11435e47e8a15236f5d07e45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageAddress: 8000
+  fieldToAnimate: 0
 --- !u!1001 &1951132833
 Prefab:
   m_ObjectHideFlags: 0
