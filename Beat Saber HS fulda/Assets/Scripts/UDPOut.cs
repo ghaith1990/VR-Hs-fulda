@@ -1,11 +1,12 @@
+using System.Collections;
 using System.Net.Sockets;
 using System.Text;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-
 
 
 public class UdpOut : MonoBehaviour 
+
 {
 
 private UdpClient maxClient = new UdpClient();
@@ -20,9 +21,9 @@ maxClient.Connect("127.0.0.1",7470);
 
 // sends an int value to Max
 
-public void SendInt(string routeString , int val)
+public void Sendint(string routeString , int val)
 {
-string message = routeString + ' ' + val;
+string message = routeString+ ' ' +val;
 byte[]messageBytes = byteEncoder.GetBytes(message);
 SendBytes(messageBytes);
 }
