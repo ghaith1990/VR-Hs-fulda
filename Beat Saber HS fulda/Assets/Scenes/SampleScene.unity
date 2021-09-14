@@ -148,7 +148,7 @@ MonoBehaviour:
   - {fileID: 1805458290}
   - {fileID: 324803036}
   - {fileID: 1034478324}
-  beat: 1.142856
+  beat: 1
 --- !u!4 &102002844
 Transform:
   m_ObjectHideFlags: 0
