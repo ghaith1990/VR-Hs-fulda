@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (fault > 5)
+        if (fault > 50)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }

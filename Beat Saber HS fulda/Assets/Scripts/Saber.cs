@@ -29,7 +29,10 @@ public class Saber : MonoBehaviour {
         RaycastHit hit;
         if(Physics.Raycast(transform.position,transform.forward,out hit,1,layer))
         {
-            if (Vector3.Angle(transform.position - previousPos, hit.transform.up) > 130)
+            if (Vector3.Angle(transform.position - previousPos, hit.transform.up) > 130 ||
+                               Vector3.Angle(transform.position - previousPos, hit.transform.right) > 130 ||
+                               Vector3.Angle(transform.position - previousPos, -hit.transform.up) > 130 ||
+                               Vector3.Angle(transform.position - previousPos, -hit.transform.right) > 130)
             {
                 Destroy(hit.transform.gameObject);
             }

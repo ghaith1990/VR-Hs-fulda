@@ -11,6 +11,7 @@ public class Cube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         transform.position += Time.deltaTime * transform.forward * 2;
 	}
 
