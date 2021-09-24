@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65623059245772550}
   - component: {fileID: 114106654212327308}
   m_Layer: 9
-  m_Name: BLUE
+  m_Name: rosa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

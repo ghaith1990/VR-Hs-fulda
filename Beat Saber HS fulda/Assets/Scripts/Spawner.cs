@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour {
     // i use an external website to measure the BPM which is the beats per minute
     // https://songbpm.com/@mbb/island
     // so to know how many beats or many seconds between two  beat i divided the Bpm to 60 seconds 
-    public float beat = (60/120)*2;
+    public float beat = (60/105)*2;
     private float timer;
 
 	// Use this for initialization
